@@ -46,7 +46,7 @@ export default function Home({ images, gridA, gridB, threeGridA, threeGridB, thr
           click={() => {setType("delete"); setShowModal(true)}}
           url={handleUrl} 
         />
-        
+
         {showModal && 
           <Modal 
             type={type} 
