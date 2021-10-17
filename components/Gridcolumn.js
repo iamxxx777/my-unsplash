@@ -2,7 +2,7 @@ import Griditem from "./Griditem";
 import columnStyles from "../styles/Gridcolumn.module.scss"
 
 const Gridcolumn = ({ data, del, url }) => {
-
+    data = data.trim();
     const images = JSON.parse(data);
 
     return (
