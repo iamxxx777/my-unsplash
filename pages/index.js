@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import connectDB from '../config/connectDB'
-import Photo from '../models/file'
+import axios from 'axios'
 
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
@@ -64,10 +63,12 @@ export default function Home({ images, gridA, gridB, threeGridA, threeGridB, thr
 
 export const getStaticProps = async () => {
 
-  connectDB();
-  const images = await Photo.find({}).sort({'createdAt': -1});
+  const { data } = await axios.get("https://image-uploader-jet.vercel.app/api/upload");
 
-  const data = await JSON.stringify(images);
+  // connectDB();
+  // const images = await Photo.find({}).sort({'createdAt': -1});
+
+  // const data = await JSON.stringify(images);
 
   if (!data) {
     return {
