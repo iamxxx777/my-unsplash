@@ -63,6 +63,12 @@ export default function Home({ images, gridA, gridB, threeGridA, threeGridB, thr
 export const getStaticProps = async () => {
   const { data } = await axios.get(`http://localhost:3000/api/server`);
 
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
   // Variables for the three column grid
   // Pardon me, i am terrible at naming variables
   var threeA = [], threeB = [], threeC = [];
