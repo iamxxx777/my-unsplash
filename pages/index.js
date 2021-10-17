@@ -15,6 +15,7 @@ export default function Home({ images, gridA, gridB, threeGridA, threeGridB, thr
   const [type, setType] = useState("add");
   const [id, setId] = useState("");
 
+
   const handleUrl = (key) => {
     setId(key);
   }
@@ -65,6 +66,7 @@ export const getStaticProps = async () => {
 
   connectDB();
   const images = await Photo.find({}).sort({'createdAt': -1});
+
   const data = await JSON.stringify(images);
 
   if (!data) {
