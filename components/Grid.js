@@ -4,10 +4,8 @@ import gridStyles from '../styles/Grid.module.scss';
 
 const Grid = ({ images, click, url, gridA, gridB, threeGridA, threeGridB, threeGridC }) => {
 
-    /* Thats a lot of props, yeah i know. i initialy wrote the code in 
-        this component but the data was not rendered for reasons i dont 
-        understand 
-    */
+    // Thats a lot of props, yeah i know but it works
+
 
     /* The viewport determines how many columns is shown.
         Get the initial viewport and then have a useEffect monitor changes
