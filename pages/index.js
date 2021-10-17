@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import axios from 'axios'
+import connectDB from '../config/connectDB'
+import Photo from '../models/file'
 
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
@@ -61,7 +62,10 @@ export default function Home({ images, gridA, gridB, threeGridA, threeGridB, thr
 }
 
 export const getStaticProps = async () => {
-  const { data } = await axios.get(`http://localhost:3000/api/server`);
+
+  connectDB();
+  const images = await Photo.find({}).sort({'createdAt': -1});
+  const data = await JSON.stringify(images);
 
   if (!data) {
     return {

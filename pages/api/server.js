@@ -7,16 +7,6 @@ export default async (req, res) => {
     const { method } = req;
 
     switch (method) {
-        case 'GET': {
-            try {
-                const images = await Photo.find({}).sort({'createdAt': -1});
-                res.status(201).json(images);
-            } catch (error) {
-                console.error(error);
-                res.status(500).json({error: "Server Error"});
-            }
-        }
-        break;
         case 'POST': {
             const { imgURL } = req.body;
 
