@@ -65,11 +65,6 @@ export const getStaticProps = async () => {
 
   const { data } = await axios.get("https://image-uploader-jet.vercel.app/api/upload");
 
-  // connectDB();
-  // const images = await Photo.find({}).sort({'createdAt': -1});
-
-  // const data = await JSON.stringify(images);
-
   if (!data) {
     return {
       notFound: true,

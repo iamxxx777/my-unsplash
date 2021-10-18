@@ -21,7 +21,7 @@ const Navbar = ({ click }) => {
                             <h4>devchallenges.io</h4>
                         </div>
                     </div>
-                    <form className={navStyles.search}>
+                    <form className={navStyles.search} onSubmit={(e) => e.preventDefault()}>
                         <label><i className="fa fa-search" aria-hidden="true"></i></label>
                         <input type="text" placeholder="Search by name" />
                     </form>

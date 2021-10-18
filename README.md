@@ -1,4 +1,3 @@
-<!-- Please update value in the {}  -->
 
 <h1 align="center">{My-Unsplash}</h1>
 
@@ -8,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}" target="_blank">
+    <a href="https://my-unsplash-seven.vercel.app/}" target="_blank">
       Demo
     </a>
     <span> | </span>
@@ -37,22 +36,18 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://screenbud.com/s/adcODh7UDbe)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
-The demo to this project is hosted on vercel and can be reached [here]("")
+The demo to this project is hosted on vercel and can be reached [here]("https://my-unsplash-seven.vercel.app/")
 
 The aim of this project is to replicate the masonry layout of unsplash and allow users to add and delete images. This project was built using next.js and the backend is powered by next.js server. To add an image to this app, users need to enter the URL to the image and a label describing the image. The url and label is then stored in a mongoDB database and the page is reloaded to show the newly added image at the top of the list.
 
 This app also allows users to delete images from the list but i added a password that needs to be provided before deletion is authorized.
 
-The toughest part for me was creating the masonry layout and making it responsive. i researched the unsplash website and got an idea about it. I created 3 grid columns which changes depending on the browsers viewport. 1 for viewports less than 480px, 2 for viewports less than 980px and greater than 480px and 3 when it is greater than 980px.
+The intriguing part for me was creating the masonry layout and making it responsive. i researched the unsplash website and got an idea about it. I created 3 grid columns which changes depending on the browsers viewport. 1 for viewports less than 480px, 2 for viewports less than 980px and greater than 480px and 3 when it is greater than 980px.
 
 ### Built With
 
