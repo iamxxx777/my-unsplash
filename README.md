@@ -36,9 +36,7 @@
 
 ## Overview
 
-![screenshot](https://screenbud.com/s/adcODh7UDbe)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+![screenshot](https://res.cloudinary.com/iamxxx777/image/upload/v1634859232/My-unsplash_qaljqy.png)
 
 
 The demo to this project is hosted on vercel and can be reached [here]("https://my-unsplash-seven.vercel.app/")
